@@ -40,13 +40,17 @@ class Velstore extends Command
 
         $this->info('Admin user created successfully.');
 
-        $availableLocales = ['en' => 'English', 'es' => 'Spanish', 'fr' => 'French', 'de' => 'German'];
+        $availableLocales = ['en' => 'English', 'es' => 'Spanish', 'fr' => 'French', 'de' => 'German', 'vi' => 'Vietnamese'];
 
-        $locale = $this->choice(
+        $localeNameToCode = array_flip($availableLocales);
+
+        $localeName = $this->choice(
             'Please select a locale to set for the application',
-            array_keys($availableLocales),
-            'en'
+            array_keys($localeNameToCode),
+            0
         );
+
+        $locale = $localeNameToCode[$localeName];
 
         if (!array_key_exists($locale, $availableLocales)) {
             $this->error("Invalid locale '{$locale}'. Supported locales are: " . implode(', ', array_keys($availableLocales)));
