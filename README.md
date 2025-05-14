@@ -54,7 +54,7 @@ Velstore is a powerful and open-source multi-vendor Laravel eCommerce solution. 
     <img src="https://flagicons.lipis.dev/flags/4x3/cn.svg" title="Chinese" width="24">
     <img src="https://flagicons.lipis.dev/flags/4x3/jp.svg" title="Japanese" width="24">
     <img src="https://flagicons.lipis.dev/flags/4x3/id.svg" title="Indonesian" width="24">
-    <img src="https://flagicons.lipis.dev/flags/4x3/vi.svg" title="Vietnamese" width="24">
+    <img src="https://flagicons.lipis.dev/flags/4x3/vn.svg" title="Vietnamese" width="24">
     <img src="https://flagicons.lipis.dev/flags/4x3/kr.svg" title="Korean" width="24">
     <img src="https://flagicons.lipis.dev/flags/4x3/th.svg" title="Thai" width="24">
 </p>
