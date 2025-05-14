@@ -17,10 +17,10 @@ return new class extends Migration
             ->constrained('attribute_values', 'id')
             ->onDelete('cascade')
             ->index('av_trans_value_fk');
-  
+
             $table->string('language_code', 5);
             $table->string('translated_value');
-        
+
             // Shorter unique constraint name
             $table->unique(['attribute_value_id', 'language_code'], 'av_trans_lang_unique');
             $table->timestamps();

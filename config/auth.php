@@ -44,7 +44,7 @@ return [
             'driver' => 'session',
             'provider' => 'vendors',
         ],
-        'customer' => [ 
+        'customer' => [
             'driver' => 'session',
             'provider' => 'customers',
         ],
@@ -76,15 +76,15 @@ return [
             'driver' => 'eloquent',
             'model' => App\Models\Vendor::class,
         ],
-            'customers' => [
+        'customers' => [
             'driver' => 'eloquent',
             'model' => App\Models\Customer::class,
-        ],  
+        ],
 
         // 'users' => [
         //     'driver' => 'database',
         //     'table' => 'users',
-        // ],   
+        // ],
     ],
 
     /*
@@ -113,13 +113,13 @@ return [
             'expire' => 60,
             'throttle' => 60,
         ],
-            'customers' => [
+        'customers' => [
             'provider' => 'customers',
             'table' => 'password_resets',
             'expire' => 60,
         ],
     ],
-        
+
     /*
     |--------------------------------------------------------------------------
     | Password Confirmation Timeout

@@ -6,7 +6,7 @@ return [
         'search_placeholder' => 'جستجو برای یک محصول',
     ],
 
-   'footer' => [
+    'footer' => [
         'terms' => 'شرایط و ضوابط',
         'privacy_policy' => 'سیاست حفظ حریم خصوصی',
         'disclaimer' => 'سلب مسئولیت',

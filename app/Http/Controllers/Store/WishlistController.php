@@ -3,14 +3,13 @@
 namespace App\Http\Controllers\Store;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
-use App\Models\Wishlist;
 use App\Models\Product;
+use App\Models\Wishlist;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 class WishlistController extends Controller
 {
-
     public function index()
     {
         $user = Auth::user();
@@ -23,7 +22,7 @@ class WishlistController extends Controller
 
         return view('wishlist.index', compact('products'));
     }
-    
+
     public function store(Request $request)
     {
         $request->validate([
@@ -48,5 +47,4 @@ class WishlistController extends Controller
 
         return response()->json(['message' => 'Added to wishlist'], 200);
     }
-
 }

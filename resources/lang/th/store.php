@@ -15,6 +15,6 @@ return [
         'footer_logo_alt' => 'โลโก้ฟุตเตอร์ Xylo',
         'copyright' => '&copy; 2025 Xylo. สงวนลิขสิทธิ์',
         'bottom_line' => 'คุณสนใจหรือไม่?',
-    ],  
+    ],
 
 ];
