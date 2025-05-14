@@ -26,6 +26,7 @@ class SocialMediaLinkRepository implements SocialMediaLinkRepositoryInterface
     {
         $socialMediaLink = $this->find($id);
         $socialMediaLink->update($data);
+
         return $socialMediaLink;
     }
 
@@ -61,5 +62,5 @@ class SocialMediaLinkRepository implements SocialMediaLinkRepositoryInterface
         } else {
             $this->storeTranslation($socialMediaLinkId, $languageCode, $name);
         }
-    }  
+    }
 }

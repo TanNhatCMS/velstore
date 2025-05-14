@@ -2,7 +2,6 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Language extends Model
@@ -11,9 +10,9 @@ class Language extends Model
     protected $fillable = ['name', 'code', 'translated_text', 'active'];
 
     /**
-     * Scope to filter active languages
+     * Scope to filter active languages.
      *
-     * @param \Illuminate\Database\Eloquent\Builder $query
+     * @param  \Illuminate\Database\Eloquent\Builder  $query
      * @return \Illuminate\Database\Eloquent\Builder
      */
     public function scopeActive($query)

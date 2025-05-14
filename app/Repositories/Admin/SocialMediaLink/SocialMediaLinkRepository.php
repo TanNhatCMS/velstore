@@ -26,6 +26,7 @@ class SocialMediaLinkRepository implements SocialMediaLinkRepositoryInterface
     {
         $socialMediaLink = $this->find($id);
         $socialMediaLink->update($data);
+
         return $socialMediaLink;
     }
 
